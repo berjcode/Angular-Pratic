@@ -1,0 +1,22 @@
+<p class="mb-4 " style="position: relative; text-align: center;margin-top: 50px;">Hoşgeldiniz Lütfen Giriş Yapın</p>
+
+<div class="container mb-3 m-5  p-2 t-6"> 
+<form>
+<div class="mb-3 row mt-2" >
+    <label  class="col-sm-2 col-form-label" >Meyveler</label>
+    <div class="col-sm-10">
+      <input   [(ngModel)] ="fruit"  [ngModelOptions] = "{standalone :true}"  type="text" class="form-control" >
+    </div>
+  </div>
+ 
+
+  <div class="col-auto  mb-3 p-3" style="position: relative; left:500px; ">
+    <button  (click)="addFruit()"  type="submit" class="btn btn-primary mb-3 " style="width: 200px; height: 100px;" >Ekle</button>
+    
+</div>
+
+
+</form>
+<app-fruit-list [fruits]="fruits"></app-fruit-list>
+</div>
+
